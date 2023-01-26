@@ -27,19 +27,25 @@ export function Home() {
         ))}
       </View>
 
-      <View className="flex-row flex-wrap">
-        {datesFromYearStart.map((date) => (
-          <HabitDay key={date.toISOString()} />
-        ))}
-
-        {amountOfDaysToFill > 0 &&
-          Array.from({ length: amountOfDaysToFill }).map((_, index) => (
-            <View
-              className="bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40"
-              style={{ width: DAY_SIZE, height: DAY_SIZE }}
-            />
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 100 }}
+      >
+        <View className="flex-row flex-wrap">
+          {datesFromYearStart.map((date) => (
+            <HabitDay key={date.toISOString()} />
           ))}
-      </View>
+
+          {amountOfDaysToFill > 0 &&
+            Array.from({ length: amountOfDaysToFill }).map((_, index) => (
+              <View
+                key={index}
+                className="bg-zinc-900 rounded-lg border-2 m-1 border-zinc-800 opacity-40"
+                style={{ width: DAY_SIZE, height: DAY_SIZE }}
+              />
+            ))}
+        </View>
+      </ScrollView>
     </View>
   );
 }
