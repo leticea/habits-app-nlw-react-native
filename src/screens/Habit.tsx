@@ -1,4 +1,5 @@
-import { ScrollView, View, Text } from "react-native";
+import { useState } from "react";
+import { ScrollView, View, Text, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import dayjs from "dayjs";
 
@@ -11,12 +12,27 @@ interface Params {
 }
 
 export function Habit() {
+  const [loading, setLoading] = useState(true);
+
   const route = useRoute();
   const { date } = route.params as Params;
 
   const parsedDate = dayjs(date);
   const dayOfWeek = parsedDate.format("dddd");
   const dayAndMonth = parsedDate.format("DD/MM");
+
+  async function fetchHabits() {
+    try {
+      setLoading(true);
+
+    } catch (error) {
+      console.log(error);
+      Alert.alert('Ops', 'Não foi possível carregar as informações dos hábitos');
+
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <View className="flex-1 bg-background px-8 pt-16">
