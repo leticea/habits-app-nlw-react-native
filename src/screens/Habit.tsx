@@ -1,18 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ScrollView, View, Text, Alert } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import dayjs from "dayjs";
 
+import { api } from "../lib/axios";
+
 import { BackButton } from "../components/BackButton";
 import { ProgressBar } from "../components/ProgressBar";
 import { Checkbox } from "../components/Checkbox";
+import { Loading } from "../components/Loading";
 
 interface Params {
   date: string;
 }
 
+interface DayInfoProps {
+  completedHabits: string[];
+  possibleHabits: {
+    id: string;
+    title: string;
+  }[];
+}
+
 export function Habit() {
   const [loading, setLoading] = useState(true);
+  const [dayInfo, setDayInfo] = useState<DayInfoProps | null>(null);
 
   const route = useRoute();
   const { date } = route.params as Params;
@@ -25,13 +37,26 @@ export function Habit() {
     try {
       setLoading(true);
 
+      const response = await api.get("/day", { params: { date } });
+      setDayInfo(response.data);
+
     } catch (error) {
       console.log(error);
-      Alert.alert('Ops', 'Não foi possível carregar as informações dos hábitos');
+      Alert.alert("Ops", "Não foi possível carregar as informações dos hábitos");
 
     } finally {
       setLoading(false);
     }
+  }
+
+  useEffect(() => {
+    fetchHabits()
+  },[])
+
+  if (loading) {
+    return (
+      <Loading />
+    )
   }
 
   return (
