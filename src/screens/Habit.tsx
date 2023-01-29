@@ -25,6 +25,7 @@ interface DayInfoProps {
 export function Habit() {
   const [loading, setLoading] = useState(true);
   const [dayInfo, setDayInfo] = useState<DayInfoProps | null>(null);
+  const [completedHabits, setCompletedHabits] = useState<string[]>([]);
 
   const route = useRoute();
   const { date } = route.params as Params;
@@ -39,6 +40,7 @@ export function Habit() {
 
       const response = await api.get("/day", { params: { date } });
       setDayInfo(response.data);
+      setCompletedHabits(response.data.completedHabits);
 
     } catch (error) {
       console.log(error);
@@ -78,9 +80,13 @@ export function Habit() {
         <ProgressBar progress={30} />
 
         <View className="mt-6">
-          <Checkbox title="Beber 2L de água" checked={false} />
+          {
+            dayInfo?.possibleHabits &&
+            dayInfo?.possibleHabits.map(habit => (
 
-          <Checkbox title="Caminhar" checked={true} />
+              <Checkbox key={habit.id} title={habit.title} checked={completedHabits.includes(habit.id)} />
+            ))
+          }
         </View>
       </ScrollView>
     </View>
