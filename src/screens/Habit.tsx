@@ -51,6 +51,15 @@ export function Habit() {
     }
   }
 
+  async function handleToggleHabit(habitId: string) {
+    if (completedHabits.includes(habitId)) {
+      setCompletedHabits(prevState => prevState.filter(habit => habit !== habitId));
+
+    } else {
+      setCompletedHabits(prevState => [...prevState, habitId]);
+    }
+  }
+
   useEffect(() => {
     fetchHabits()
   },[])
@@ -84,7 +93,12 @@ export function Habit() {
             dayInfo?.possibleHabits &&
             dayInfo?.possibleHabits.map(habit => (
 
-              <Checkbox key={habit.id} title={habit.title} checked={completedHabits.includes(habit.id)} />
+              <Checkbox
+                key={habit.id}
+                title={habit.title}
+                checked={completedHabits.includes(habit.id)}
+                onPress={() => handleToggleHabit(habit.id)}
+              />
             ))
           }
         </View>
