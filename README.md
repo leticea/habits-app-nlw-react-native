@@ -7,6 +7,18 @@
 
 <br>
 
+<p align="center">
+  <img alt="art" src=".github/image.png">
+</p>
+
+<p align="center">
+  <img alt="art" src=".github/image2.png">
+</p>
+
+<p align="center">
+  <img alt="art" src=".github/image3.png">
+</p>
+
 ## NLW Setup - Habits
 
 ## 🚀 Tecnologias
