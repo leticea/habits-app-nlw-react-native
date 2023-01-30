@@ -49,7 +49,7 @@ Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 - Clone o projeto da API para rodar o projeto junto.
 - Entre na pasta do projeto e rode 'npm install' (use 'yarn install' se for essa a sua configuração).
 - Rodar o comando npx expo start para abrir no emulador ou no telefone físico.
-- Caso <b>não<b> tenha o expo instalado, seguir o passo a passo da [Rocketseat](https://react-native.rocketseat.dev/).
+- Caso não tenha o expo instalado, seguir o passo a passo da [Rocketseat](https://react-native.rocketseat.dev/).
 
 ## 🤔 Como contribuir
 
