@@ -8,15 +8,15 @@
 <br>
 
 <p align="center">
-  <img alt="art" src=".github/image.jpeg">
+  <img alt="" src=".github/image.jpeg">
 </p>
 
 <p align="center">
-  <img alt="art" src=".github/image2.jpeg">
+  <img alt="" src=".github/image2.jpeg">
 </p>
 
 <p align="center">
-  <img alt="art" src=".github/image3.jpeg">
+  <img alt="" src=".github/image3.jpeg">
 </p>
 
 ## NLW Setup - Habits
