@@ -34,19 +34,19 @@ Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 - [Front-end - Web](https://github.com/leticea/habits-app-nlw-react)
 
 <p align="center">
-  <img height="900" width="450" alt="" src=".github/image.jpeg">
+  <img height="700" width="350" alt="" src=".github/image.jpeg">
 </p>
 
 <p align="center">
-  <img height="900" width="450" alt="" src=".github/image2.jpeg">
+  <img height="700" width="350" alt="" src=".github/image2.jpeg">
 </p>
 
 <p align="center">
-  <img height="900" width="450" alt="" src=".github/image3.jpeg">
+  <img height="700" width="350" alt="" src=".github/image3.jpeg">
 </p>
 
 <p align="center">
-  <img height="900" width="450" alt="" src=".github/image4.jpeg">
+  <img height="700" width="350" alt="" src=".github/image4.jpeg">
 </p>
 
 ## 🚀 Como Rodar
