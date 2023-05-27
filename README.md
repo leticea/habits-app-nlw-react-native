@@ -15,6 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Nodejs](https://nodejs.org/en/) - v18.12.1
 - [Npm](https://www.npmjs.com/) - 8.19.2
+- [Axios](https://axios-http.com/docs/intro) - ^1.2.5
 - [React](https://reactnative.dev/) - 18.1.0
 - [React Native](https://reactnative.dev/) - 0.70.5
 - [TypeScript](https://www.typescriptlang.org/) - 4.6.3
