@@ -7,19 +7,7 @@
 
 <br>
 
-<p align="center">
-  <img alt="" src=".github/image.jpeg">
-</p>
-
-<p align="center">
-  <img alt="" src=".github/image2.jpeg">
-</p>
-
-<p align="center">
-  <img alt="" src=".github/image3.jpeg">
-</p>
-
-## NLW Setup - Habits
+# NLW Setup - Habits
 
 ## 🚀 Tecnologias
 
@@ -27,12 +15,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Nodejs](https://nodejs.org/en/) - v18.12.1
 - [Npm](https://www.npmjs.com/) - 8.19.2
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactnative.dev/) - 18.1.0
+- [React Native](https://reactnative.dev/) - 0.70.5
+- [TypeScript](https://www.typescriptlang.org/) - 4.6.3
+- [NativeWind](https://www.nativewind.dev/) - ^2.0.11
+- [Tailwindcss](https://tailwindcss.com/) - ^3.2.4
 - [Expo](https://expo.dev/)
-- [NativeWind](https://www.nativewind.dev/)
-- [clsx](https://github.com/lukeed/clsx)
-- [dayjs](https://github.com/iamkun/dayjs)
+- [Clsx](https://github.com/lukeed/clsx)
+- [Day.js](https://github.com/iamkun/dayjs)
 
 ## 💻 Projeto
 
@@ -40,8 +30,24 @@ Projeto desenvolvido com React Native para a criação e manutenção de hábito
 
 Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 
-- [Backend - API](https://github.com/leticea/habits-app-nlw-api)
-- [Frontend Reactjs - Web](https://github.com/leticea/habits-app-nlw-react)
+- [Back-end - API](https://github.com/leticea/habits-app-nlw-api)
+- [Front-end - Web](https://github.com/leticea/habits-app-nlw-react)
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image.jpeg">
+</p>
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image2.jpeg">
+</p>
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image3.jpeg">
+</p>
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image4.jpeg">
+</p>
 
 ## 🚀 Como Rodar
 
